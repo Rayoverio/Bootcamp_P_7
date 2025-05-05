@@ -13,5 +13,6 @@ st.write('Esta aplicación es un breve proyecto para aprender aplicación web')
 
 #Botón
 if st.button('Mostrar Histograma'):
-    fig = px.histogram(car_data, x='odometro')
+    fig = px.histogram(car_data, x='odometer')
     st.plotly_chart(fig)
+    st.stop()
